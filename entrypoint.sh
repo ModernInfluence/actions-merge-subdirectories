@@ -12,10 +12,11 @@ BASE=$(pwd)
 
 # echo "Cloning folders in $SRC_FOLDER and pushing to $DEST_REPO"
 
-echo "Moving to home directory"
+echo "Creating clone directory"
+cd $BASE
 
-mkdir "~/CLONE_REPO"
-cd "~/CLONE_REPO"
+mkdir "CLONE_REPO"
+cd "CLONE_REPO"
 
 echo "Cloning destination repo $DEST_REPO"
 git clone https://$API_TOKEN_GITHUB@github.com/$DEST_REPO.git 
