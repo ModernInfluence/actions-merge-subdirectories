@@ -7,8 +7,8 @@ DEST_REPO=$2
 
 BASE=$(pwd)
 
-# git config --global user.email "johno-actions-push-subdirectories@example.org"
-# git config --global user.name "$GITHUB_USERNAME"
+git config --global user.email "bricktownseo@gmail.com"
+git config --global user.name "bricktownseo" #"$GITHUB_USERNAME"
 
 # echo "Cloning folders in $SRC_FOLDER and pushing to $DEST_REPO"
 
