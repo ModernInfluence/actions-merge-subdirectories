@@ -19,7 +19,8 @@ mkdir "CLONE_REPO"
 cd "CLONE_REPO"
 
 echo "Cloning destination repo $DEST_REPO"
-git clone https://$API_TOKEN_GITHUB@github.com/$DEST_REPO.git 
+echo "Clone URL https://$API_TOKEN_GITHUB@github.com/$DEST_REPO.git"
+git clone https://$API_TOKEN_GITHUB@github.com/$DEST_REPO.git
 
 echo "Copying $SRC_FOLDER"
 cp -r $BASE/$SRC_FOLDER .
