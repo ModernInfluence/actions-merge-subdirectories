@@ -22,6 +22,8 @@ echo "Cloning destination repo $DEST_REPO"
 echo "Clone URL https://$API_TOKEN_GITHUB@github.com/$DEST_REPO.git"
 git clone https://$API_TOKEN_GITHUB@github.com/$DEST_REPO.git
 
+cd $(basename $DEST_REPO.git .git)
+
 echo "Copying $SRC_FOLDER"
 cp -r $BASE/$SRC_FOLDER .
 
